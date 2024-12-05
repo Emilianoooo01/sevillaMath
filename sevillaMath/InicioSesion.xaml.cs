@@ -20,8 +20,6 @@ public partial class InicioSesion : ContentPage
     private async void btnInicioSesion_Clicked(object sender, EventArgs e)
     {
         //Boton Inicio de Sesión
-        await Navigation.PushAsync(new PaginaInicio(),true);
-
         string usuario = entUsuario.Text;
         string contrasena = entContraseña.Text;
 
