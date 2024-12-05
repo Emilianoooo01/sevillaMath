@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="sevillaMath.InicioSesion"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#F1EFEF" StatusBarStyle="DarkContent"/>
+    </Page.Behaviors>
+
+    <Grid BackgroundColor="#F1EFEF">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition Height="150"/>
+        </Grid.RowDefinitions>
+        
+        <!--Encabezado-->
+
+        <StackLayout Grid.Row="0">
+            
+            <Image Source="logo.png"
+                   Margin="20"
+                   HorizontalOptions="FillAndExpand"
+                   VerticalOptions="FillAndExpand"/>
+
+            <Label Text="Inicio de Sesión"
+                   FontSize="35"
+                   FontFamily="Lora"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="End"/>
+            
+        </StackLayout>
+
+        <!--Entradas-->
+        <ScrollView Grid.Row="1"
+                    Grid.RowSpan="2"
+                    HorizontalScrollBarVisibility="Never"
+                    VerticalScrollBarVisibility="Never"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+
+            <StackLayout Margin="20"
+                         HorizontalOptions="FillAndExpand"
+                         VerticalOptions="FillAndExpand">
+
+                <Label Text="Usuario"
+                       FontSize="20"
+                       Margin="20"
+                       FontFamily="Lora"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="End"/>
+
+                <Border Stroke="#AB8566"
+                        BackgroundColor="#AB8566"
+                        StrokeShape="RoundRectangle 100 100 100 100"
+                        HeightRequest="90"
+                        MinimumHeightRequest="90"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+
+                    <Entry Margin="20"
+                           ZIndex="1"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Center"
+                           x:Name="entUsuario"/>
+
+                </Border>
+
+                <Label Text="Contraseña"
+                       FontSize="20"
+                       Margin="20"
+                       FontFamily="Lora"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="End"/>
+
+                <Border Stroke="#AB8566"
+                        BackgroundColor="#AB8566"
+                        StrokeShape="RoundRectangle 100 100 100 100"
+                        HeightRequest="90"
+                        MinimumHeightRequest="75"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+
+                    <Entry Margin="20"
+                           ZIndex="1"
+                           IsPassword="True"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Center"
+                           x:Name="entContraseña"/>
+
+                </Border>
+            </StackLayout>
+        </ScrollView>
+
+        <!--Botones-->
+        <StackLayout Grid.Row="3">
+
+            <Button Text="crear cuenta"
+                    FontSize="25"
+                    FontFamily="Lora"
+                    TextColor="Black"
+                    BackgroundColor="Transparent"
+                    HeightRequest="50"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    x:Name="btnCrear"
+                    Clicked="btnCrear_Clicked"/>
+
+            <Button Margin="15"
+                    Text="Acceder"
+                    TextColor="White"
+                    FontFamily="Lora"
+                    FontSize="25"
+                    FontAttributes="Bold"
+                    CornerRadius="100"
+                    BackgroundColor="Black"
+                    BorderColor="Gray"
+                    BorderWidth="2"
+                    HeightRequest="80"
+                    VerticalOptions="EndAndExpand"
+                    x:Name="btnInicioSesion"
+                    Clicked="btnInicioSesion_Clicked"/>
+            
+        </StackLayout>
+    </Grid>
+</ContentPage>

@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="sevillaMath.PaginaInicio"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.HasBackButton="False"
+             Title="PaginaInicio">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#F1EFEF" StatusBarStyle="DarkContent"/>
+    </Page.Behaviors>
+
+    <Grid BackgroundColor="#F1EFEF">
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!--Titulo-->
+        <Label Grid.Row="0"
+               Text="Cursos"
+               Margin="20"
+               FontSize="50"
+               FontFamily="Lora"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"/>
+
+        <!--Lista Cursos-->
+        <ScrollView Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand"
+                    HorizontalScrollBarVisibility="Never">
+
+            <StackLayout Spacing="10"
+                         Margin="20"
+                         Orientation="Horizontal">
+
+                <Button Background="#6A93D8"
+                        BorderColor="#6A93D8"
+                        CornerRadius="35"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        ImageSource="int_icon.png"
+                        x:Name="btnInmediatas"
+                        Clicked="btnInmediatas_Clicked"/>
+
+                <Button Background="#D86A6A"
+                        BorderColor="#D86A6A"
+                        CornerRadius="35"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        ImageSource="log_icon.png"/>
+            </StackLayout>
+        </ScrollView>
+
+        <!--Lista Videos-->
+        <ScrollView Grid.Row="2"
+                    Grid.RowSpan="2"
+                    HorizontalScrollBarVisibility="Never"
+                    VerticalScrollBarVisibility="Never"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+
+            <StackLayout>
+
+                <Label Text="Videos"
+                   Margin="20"
+                   FontSize="30"
+                   FontFamily="Lora"/>
+
+                <ScrollView Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalScrollBarVisibility="Never">
+
+                    <StackLayout Spacing="10"
+                             Margin="20"
+                             Orientation="Horizontal">
+
+                        <Frame Background="Black"
+                           BorderColor="Black"
+                           CornerRadius="30"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand">
+
+                            <!--Placeholder de Miniatura-->
+                            <Image Source="placeholer1.jpeg" />
+
+                        </Frame>
+
+                        <Frame Background="Black"
+                           BorderColor="Black"
+                           CornerRadius="30"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand">
+
+                            <!--Placeholder de Miniatura-->
+                            <Image Source="placeholder2.jpeg" />
+
+                        </Frame>
+
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+        </ScrollView>
+
+        <!--Barra de Opciones-->
+        <Frame Grid.Row="3"
+               Padding="2"
+               Margin="15"
+               HasShadow="True"
+               CornerRadius="100"
+               HeightRequest="80"
+               VerticalOptions="End"
+               BorderColor="Gray"
+               BackgroundColor="#AB8566">
+
+            <Grid ColumnSpacing="5"
+                  Margin="15">
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Button Grid.Column="0"
+                        Text="Inicio"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontFamily="Lora"
+                        CornerRadius="100"
+                        ImageSource="inicio_icon.png"
+                        BackgroundColor="#f1f1f1"/>
+
+                <Button Grid.Column="1"
+                        Text="Puntos"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontFamily="Lora"
+                        CornerRadius="100"
+                        ImageSource="edit_icon.png"
+                        BackgroundColor="#f1f1f1"/>
+
+            </Grid>
+        </Frame>
+    </Grid>
+</ContentPage>

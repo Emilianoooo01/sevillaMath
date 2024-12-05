@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="sevillaMath.InInmediatas"
+             NavigationPage.HasNavigationBar="False"
+             Title="InInmediatas">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#6A93D8" StatusBarStyle="DarkContent"/>
+    </Page.Behaviors>
+
+    <ScrollView>
+        <VerticalStackLayout Background="#F1EFEF">
+
+            <Border BackgroundColor="#6A93D8"
+                    Stroke="#6A93D8"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 0 0 30 30"
+                    HeightRequest="150"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start"
+                    Background="#6A93D8">
+
+                <Label Text="Integrales&#x0a;Inmediatas"
+                       Margin="20"
+                       FontSize="40"
+                       FontFamily="Lora"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+
+            </Border>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

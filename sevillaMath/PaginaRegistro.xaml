@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="sevillaMath.PaginaRegistro"
+             BackgroundColor="#50000000"
+             Disappearing="ContentPage_Disappearing"
+             Title="PaginaRegistro">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#717171" StatusBarStyle="LightContent"/>
+    </Page.Behaviors>
+
+    <Grid>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+        
+        <!--Titulo-->
+        <Label Grid.Row="0"
+               Text="Crear cuenta"
+               Margin="20"
+               FontSize="50"
+               FontFamily="Lora"
+               TextColor="#F1EFEF"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+        <!--Ventana-->
+        <Border Grid.Row="1"
+                Grid.RowSpan="2"
+                BackgroundColor="#F1EFEF"
+                Stroke="#F1EFEF"
+                StrokeThickness="0"
+                StrokeShape="RoundRectangle 30 30 0 0"
+                HorizontalOptions="FillAndExpand"
+                VerticalOptions="FillAndExpand"
+                Background="#F1EFEF"/>
+        
+        <!--Entradas-->
+
+        <ScrollView Grid.Row="1"
+                    HorizontalScrollBarVisibility="Never"
+                    VerticalScrollBarVisibility="Never"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="FillAndExpand">
+            
+            <StackLayout Margin="20"
+                         VerticalOptions="StartAndExpand">
+
+                <Label Text="Usuario"
+                       Margin="20"
+                       FontSize="30"
+                       FontFamily="Lora"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="End"/>
+
+                <Border Stroke="#AB8566"
+                        BackgroundColor="#AB8566"
+                        StrokeShape="RoundRectangle 100 100 100 100"
+                        HeightRequest="90"
+                        MinimumHeightRequest="90"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+
+                    <Entry Margin="20"
+                           ZIndex="1"
+                           Placeholder="¿Como quieres que te llamemos?"
+                           PlaceholderColor="#80000000"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Center"
+                           x:Name="entUsuario"/>
+
+                </Border>
+
+                <Label Text="Contraseña"
+                       Margin="20"
+                       FontSize="30"
+                       FontFamily="Lora"
+                       HorizontalTextAlignment="Start"
+                       VerticalTextAlignment="End"/>
+
+                <Border Stroke="#AB8566"
+                        BackgroundColor="#AB8566"
+                        StrokeShape="RoundRectangle 100 100 100 100"
+                        HeightRequest="90"
+                        MinimumHeightRequest="75"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+
+                    <Entry Margin="20"
+                           ZIndex="1"
+                           IsPassword="True"
+                           Placeholder="Agrega minimo 6 caracteres"
+                           PlaceholderColor="#80000000"
+                           HorizontalOptions="Fill"
+                           VerticalOptions="Center"
+                           x:Name="entContraseña"/>
+
+                </Border>
+            </StackLayout>
+        </ScrollView>
+
+        <!--Botonen-->
+        <Button Grid.Row="2"
+                Margin="15"
+                Text="Continuar"
+                TextColor="White"
+                FontFamily="Lora"
+                FontSize="25"
+                FontAttributes="Bold" 
+                CornerRadius="100"
+                BackgroundColor="Black"
+                BorderColor="Gray"
+                BorderWidth="2"
+                HeightRequest="80"
+                VerticalOptions="EndAndExpand"
+                x:Name="btnCrearCuenta"
+                Clicked="btnCrearCuenta_Clicked"/>
+    </Grid>
+</ContentPage>
