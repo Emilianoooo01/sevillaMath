@@ -8,10 +8,28 @@
              NavigationPage.HasBackButton="False"
              Title="PaginaInicio">
 
+    <!--Configuraciones de la Pagina-->
     <Page.Behaviors>
         <mct:StatusBarBehavior StatusBarColor="#F1EFEF" StatusBarStyle="DarkContent"/>
     </Page.Behaviors>
 
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <LinearGradientBrush x:Key="DegradadoSuperior" StartPoint="0,0" EndPoint="0,1">
+                <GradientStop Color="#F1EFEF" Offset="0.0"/>
+                <GradientStop Color="#30F1EFEF" Offset="0.8"/>
+                <GradientStop Color="#00F1EFEF" Offset="1.0"/>
+            </LinearGradientBrush>
+
+            <LinearGradientBrush x:Key="DegradadoInferior" StartPoint="0,1" EndPoint="0,0">
+                <GradientStop Color="White" Offset="0.0"/>
+                <GradientStop Color="#F1EFEF" Offset="0.2"/>
+                <GradientStop Color="#00F1EFEF" Offset="1.0"/>
+            </LinearGradientBrush>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <!--Contenido-->
     <Grid BackgroundColor="#F1EFEF">
 
         <Grid.ColumnDefinitions>
@@ -19,14 +37,14 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"/>
-            <RowDefinition/>
+            <RowDefinition Height="89"/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
 
         <!--Titulo-->
         <Label Grid.Row="0"
+               ZIndex="2"
                Text="Cursos"
                Margin="20"
                FontSize="50"
@@ -34,95 +52,112 @@
                FontAttributes="Bold"
                HorizontalOptions="FillAndExpand"/>
 
-        <!--Lista Cursos-->
-        <ScrollView Grid.Row="1"
-                    Orientation="Horizontal"
+        <BoxView Grid.Row="0"
+                 ZIndex="1"
+                 Background="{StaticResource DegradadoSuperior}"
+                 HeightRequest="110"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="Start"/>
+
+        <!--Cursos-->
+        <ScrollView Grid.Row="0"
+                    Grid.RowSpan="3"
+                    Orientation="Vertical"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand"
-                    HorizontalScrollBarVisibility="Never">
-
-            <StackLayout Spacing="10"
-                         Margin="20"
-                         Orientation="Horizontal">
-
-                <Button Background="#6A93D8"
-                        BorderColor="#6A93D8"
-                        CornerRadius="35"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
-                        ImageSource="int_icon.png"
-                        x:Name="btnInmediatas"
-                        Clicked="btnInmediatas_Clicked"/>
-
-                <Button Background="#D86A6A"
-                        BorderColor="#D86A6A"
-                        CornerRadius="35"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
-                        ImageSource="log_icon.png"/>
-            </StackLayout>
-        </ScrollView>
-
-        <!--Lista Videos-->
-        <ScrollView Grid.Row="2"
-                    Grid.RowSpan="2"
                     HorizontalScrollBarVisibility="Never"
-                    VerticalScrollBarVisibility="Never"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="FillAndExpand">
+                    VerticalScrollBarVisibility="Never">
 
-            <StackLayout>
+            <VerticalStackLayout>
 
-                <Label Text="Videos"
-                   Margin="20"
-                   FontSize="30"
-                   FontFamily="Lora"/>
-
+                <!--Lista Cursos-->
+                <BoxView Grid.Row="0"
+                         BackgroundColor="#F1EFEF"
+                         HeightRequest="89"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="Start"/>
+                
                 <ScrollView Orientation="Horizontal"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="FillAndExpand"
-                        HorizontalScrollBarVisibility="Never">
+                            HorizontalOptions="FillAndExpand"
+                            MaximumHeightRequest="300"
+                            HorizontalScrollBarVisibility="Never">
 
-                    <StackLayout Spacing="10"
-                             Margin="20"
-                             Orientation="Horizontal">
+                    <StackLayout Spacing="15"
+                                 Margin="20"
+                                 Orientation="Horizontal">
 
-                        <Frame Background="Black"
-                           BorderColor="Black"
-                           CornerRadius="30"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand">
+                        <Button Background="#6A93D8"
+                                BorderColor="#6A93D8"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="int_icon.png"
+                                x:Name="btnInmediatas"
+                                Clicked="btnInmediatas_Clicked"/>
 
-                            <!--Placeholder de Miniatura-->
-                            <Image Source="placeholer1.jpeg" />
-
-                        </Frame>
-
-                        <Frame Background="Black"
-                           BorderColor="Black"
-                           CornerRadius="30"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand">
-
-                            <!--Placeholder de Miniatura-->
-                            <Image Source="placeholder2.jpeg" />
-
-                        </Frame>
+                        <Button Background="#D86A6A"
+                                BorderColor="#D86A6A"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="log_icon.png"
+                                x:Name="btnLogaritmicas"
+                                Clicked="btnLogaritmicas_Clicked"/>
 
                     </StackLayout>
                 </ScrollView>
-            </StackLayout>
+
+                <!--Lista Videos-->
+                <Label Text="Videos"
+                       Margin="20"
+                       FontSize="30"
+                       FontFamily="Lora"/>
+                
+                <Grid Margin="20"
+                      ColumnDefinitions="2, *"
+                      RowDefinitions="3"
+                      ColumnSpacing="15">
+                    
+                    <Frame Grid.Row="0"
+                           Grid.Column="0"
+                           Background="Black"
+                           BorderColor="Black"
+                           CornerRadius="30"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand">
+
+                        <!--Placeholder de Miniatura-->
+                        <Image Source="placeholer1.jpeg" />
+
+                    </Frame>
+
+                    <Frame Grid.Row="0"
+                           Grid.Column="1"
+                           Background="Black"
+                           BorderColor="Black"
+                           CornerRadius="30"
+                           HorizontalOptions="FillAndExpand"
+                           VerticalOptions="FillAndExpand">
+
+                        <!--Placeholder de Miniatura-->
+                        <Image Source="placeholder2.jpeg" />
+
+                    </Frame>
+                </Grid>
+            </VerticalStackLayout>
+
         </ScrollView>
 
         <!--Barra de Opciones-->
-        <Frame Grid.Row="3"
+        <Frame Grid.Row="2"
+               ZIndex="2"
                Padding="2"
                Margin="15"
-               HasShadow="True"
                CornerRadius="100"
                HeightRequest="80"
                VerticalOptions="End"
-               BorderColor="Gray"
+               MaximumWidthRequest="500"
+               BorderColor="#F1EFEF"
                BackgroundColor="#AB8566">
 
             <Grid ColumnSpacing="5"
@@ -138,24 +173,38 @@
                 </Grid.RowDefinitions>
 
                 <Button Grid.Column="0"
-                        Text="Inicio"
+                        Text="Perfil"
                         TextColor="Black"
+                        FontSize="20"
                         FontAttributes="Bold"
-                        FontFamily="Lora"
+                        FontFamily="RobotoSlab"
                         CornerRadius="100"
                         ImageSource="inicio_icon.png"
-                        BackgroundColor="#f1f1f1"/>
+                        BackgroundColor="#f1f1f1"
+                        x:Name="btnPerfil"
+                        Clicked="btnPerfil_Clicked"/>
 
                 <Button Grid.Column="1"
-                        Text="Puntos"
+                        Text="Prueba"
                         TextColor="Black"
+                        FontSize="20"
                         FontAttributes="Bold"
-                        FontFamily="Lora"
+                        FontFamily="RobotoSlab"
                         CornerRadius="100"
                         ImageSource="edit_icon.png"
-                        BackgroundColor="#f1f1f1"/>
+                        BackgroundColor="#f1f1f1"
+                        x:Name="btnPrueba"
+                        Clicked="btnPrueba_Clicked"/>
 
             </Grid>
         </Frame>
+        
+        <BoxView Grid.Row="2"
+                 ZIndex="1"
+                 Background="{StaticResource DegradadoInferior}"
+                 HeightRequest="50"
+                 HorizontalOptions="Fill"
+                 VerticalOptions="End"/>
+        
     </Grid>
 </ContentPage>

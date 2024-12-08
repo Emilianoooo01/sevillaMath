@@ -17,6 +17,7 @@ namespace sevillaMath
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                     fonts.AddFont("Lora-VariableFont_wght.ttf", "Lora");
+                    fonts.AddFont("RobotoSlab-VariableFont_wght.ttf", "RobotoSlab");
                 });
 
 #if DEBUG
