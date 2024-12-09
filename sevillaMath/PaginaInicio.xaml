@@ -26,6 +26,16 @@
                 <GradientStop Color="#F1EFEF" Offset="0.2"/>
                 <GradientStop Color="#00F1EFEF" Offset="1.0"/>
             </LinearGradientBrush>
+
+            <DataTemplate x:Key="BotonVideo">
+                <Frame Padding="5" CornerRadius="30" Margin="7">
+                    <StackLayout Margin="10">
+                        <Image Source="{Binding Miniatura}" Aspect="AspectFill" HeightRequest="100"/>
+                        <Label Text="{Binding Titulo}" FontSize="Medium"/>
+                    </StackLayout>
+                </Frame>
+            </DataTemplate>
+
         </ResourceDictionary>
     </ContentPage.Resources>
 
@@ -76,7 +86,7 @@
                          HeightRequest="89"
                          HorizontalOptions="Fill"
                          VerticalOptions="Start"/>
-                
+
                 <ScrollView Orientation="Horizontal"
                             HorizontalOptions="FillAndExpand"
                             MaximumHeightRequest="300"
@@ -112,40 +122,20 @@
                        Margin="20"
                        FontSize="30"
                        FontFamily="Lora"/>
+
+                <CollectionView ItemsSource="{Binding Videos}" ItemTemplate="{StaticResource BotonVideo}" Margin="10">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" Span="2"/>
+                    </CollectionView.ItemsLayout>
+                </CollectionView>
+
+                <BoxView Grid.Row="0"
+                         BackgroundColor="#F1EFEF"
+                         HeightRequest="110"
+                         HorizontalOptions="Fill"
+                         VerticalOptions="Start"/>
                 
-                <Grid Margin="20"
-                      ColumnDefinitions="2, *"
-                      RowDefinitions="3"
-                      ColumnSpacing="15">
-                    
-                    <Frame Grid.Row="0"
-                           Grid.Column="0"
-                           Background="Black"
-                           BorderColor="Black"
-                           CornerRadius="30"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand">
-
-                        <!--Placeholder de Miniatura-->
-                        <Image Source="placeholer1.jpeg" />
-
-                    </Frame>
-
-                    <Frame Grid.Row="0"
-                           Grid.Column="1"
-                           Background="Black"
-                           BorderColor="Black"
-                           CornerRadius="30"
-                           HorizontalOptions="FillAndExpand"
-                           VerticalOptions="FillAndExpand">
-
-                        <!--Placeholder de Miniatura-->
-                        <Image Source="placeholder2.jpeg" />
-
-                    </Frame>
-                </Grid>
             </VerticalStackLayout>
-
         </ScrollView>
 
         <!--Barra de Opciones-->
@@ -160,7 +150,7 @@
                BorderColor="#F1EFEF"
                BackgroundColor="#AB8566">
 
-            <Grid ColumnSpacing="5"
+            <Grid ColumnSpacing="10"
                   Margin="15">
 
                 <Grid.ColumnDefinitions>
