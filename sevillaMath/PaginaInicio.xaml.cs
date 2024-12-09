@@ -5,11 +5,14 @@ namespace sevillaMath;
 
 public partial class PaginaInicio : ContentPage
 {
+    private readonly BDService _databaseService;
     public ObservableCollection<Video> Videos { get; set; }
 
-    public PaginaInicio()
+    public PaginaInicio(BDService databaseService)
 	{
 		InitializeComponent();
+
+        _databaseService = databaseService;
 
         Videos = new ObservableCollection<Video>
         {
@@ -52,4 +55,18 @@ public partial class PaginaInicio : ContentPage
         public string Miniatura { get; set; }
     }
 
+    private void btnPorPartes_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnExplicitas_Clicked(object sender, EventArgs e)
+    {
+
+    }
+
+    private void btnFracciones_Clicked(object sender, EventArgs e)
+    {
+
+    }
 }

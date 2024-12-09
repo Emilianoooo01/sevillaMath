@@ -12,11 +12,6 @@ public partial class InicioSesion : ContentPage
         _databaseService = new BDService(dbPath);
     }
 
-    public void AbrirPaginaInicio()
-    {
-        Navigation.PushAsync(new PaginaInicio());
-    }
-
     private async void btnInicioSesion_Clicked(object sender, EventArgs e)
     {
         //Boton Inicio de Sesión
@@ -35,7 +30,9 @@ public partial class InicioSesion : ContentPage
 
         if (usuarioValido != null)
         {
-            await Navigation.PushAsync(new PaginaInicio(), true);
+            SesionUsuario.NombreUsuario = usuarioValido.NombreUsuario;
+            var paginaInicio = new PaginaInicio(_databaseService);
+            await Navigation.PushAsync(paginaInicio);
         }
         else
         {

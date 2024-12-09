@@ -47,7 +47,7 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="89"/>
+            <RowDefinition Height="100"/>
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -113,6 +113,38 @@
                                 ImageSource="log_icon.png"
                                 x:Name="btnLogaritmicas"
                                 Clicked="btnLogaritmicas_Clicked"/>
+
+                        <Button Background="#D86A6A"
+                                BorderColor="#D86A6A"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="log_icon.png"
+                                x:Name="btnPorPartes"
+                                Clicked="btnPorPartes_Clicked"/>
+
+                        <Button Background="#D86A6A"
+                                BorderColor="#D86A6A"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="log_icon.png"
+                                x:Name="btnExplicitas"
+                                Clicked="btnExplicitas_Clicked"/>
+
+                        <Button Background="#D86A6A"
+                                BorderColor="#D86A6A"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="log_icon.png"
+                                x:Name="btnFracciones"
+                                Clicked="btnFracciones_Clicked"/>
+
+
+
+                        <!--#region 
+                        siaudgwoa-->
 
                     </StackLayout>
                 </ScrollView>
