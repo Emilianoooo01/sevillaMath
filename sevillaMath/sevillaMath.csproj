@@ -21,7 +21,7 @@
 		<Nullable>enable</Nullable>
 
 		<!-- Display name -->
-		<ApplicationTitle>sevillaMath</ApplicationTitle>
+		<ApplicationTitle>Sevilla Math</ApplicationTitle>
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.sevillamath</ApplicationId>
@@ -40,10 +40,10 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
-
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\icon_sevilla.svg" Color="#512BD4" />
+		
 		<!-- Splash Screen -->
-		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+		<MauiSplashScreen Include="Resources\Splash\logo_sevilla.svg" Color="#AB8566" BaseSize="500,500" Aspect="Fit" />
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
@@ -64,6 +64,7 @@
 	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\log_icon.png" />
 	  <None Remove="Resources\Images\play_icon.png" />
+	  <None Remove="Resources\Splash\logo_sevilla.svg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -93,6 +94,10 @@
 	<ItemGroup>
 	  <None Update="InInmediatas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
+	  </None>
+	  <None Update="Resources\AppIcon\icon_sevilla.svg">
+	    <Aspect>Fill</Aspect>
+	    <Color>#AB8566</Color>
 	  </None>
 	</ItemGroup>
 
