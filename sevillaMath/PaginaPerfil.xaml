@@ -46,7 +46,7 @@
                 VerticalOptions="FillAndExpand"
                 Background="#F1EFEF"/>
 
-        <!--Entradas-->
+        <!--Perfil-->
 
         <ScrollView Grid.Row="1"
                     HorizontalScrollBarVisibility="Never"
@@ -54,10 +54,28 @@
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
 
-            <StackLayout Margin="20"
-                         VerticalOptions="StartAndExpand">
+            <StackLayout Margin="20" Padding="20">
+
+                <Label Text="Nombre de Usuario" FontSize="20" FontFamily="RobotoSlab" FontAttributes="Bold" />
+                
+                <Label x:Name="NombreUsuarioLabel" FontSize="18" Padding="10"/>
+
+                <Label Text="Puntajes por Tema" FontSize="20" FontFamily="RobotoSlab" FontAttributes="Bold" Margin="0,20,0,10" />
+                
+                <CollectionView x:Name="PuntajesCollectionView">
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <StackLayout Orientation="Horizontal" Padding="10">
+                                <Label Text="{Binding Tema}" FontSize="16" />
+                                <Label Text="{Binding Puntuacion}" FontSize="16" 
+                               HorizontalOptions="EndAndExpand" />
+                            </StackLayout>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
                 
             </StackLayout>
         </ScrollView>
     </Grid>
+    
 </ContentPage>

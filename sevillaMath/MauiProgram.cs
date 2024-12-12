@@ -3,6 +3,17 @@ using Microsoft.Extensions.Logging;
 
 namespace sevillaMath
 {
+    /// <summary>
+    /// ======= Sevilla Math Team ========
+    /// 
+    /// Ortiz Avelar Jesús
+    /// Garrido Flores Eduardo
+    /// Sotres Pastrana Aarón Tadeo
+    /// Gómez Mireles Bruno Denilson
+    /// Gonzalez Martinez Alfredo Emiliano
+    /// ==================================
+    /// </summary>
+    
     public static class MauiProgram
     {
         public static MauiApp CreateMauiApp()

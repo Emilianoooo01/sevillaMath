@@ -100,7 +100,7 @@
                     <Entry Margin="20"
                            ZIndex="1"
                            IsPassword="True"
-                           Placeholder="Agrega minimo 6 caracteres"
+                           Placeholder="Ingresa una contraseña segura"
                            PlaceholderColor="#80000000"
                            HorizontalOptions="Fill"
                            VerticalOptions="Center"

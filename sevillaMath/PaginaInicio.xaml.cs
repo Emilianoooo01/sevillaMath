@@ -16,11 +16,8 @@ public partial class PaginaInicio : ContentPage
 
         Videos = new ObservableCollection<Video>
         {
-            new Video { Titulo = "Video 1", Miniatura = "video1.jpg" },
+            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg" },
             new Video { Titulo = "Video 2", Miniatura = "video2.jpg" },
-            new Video { Titulo = "Video 3", Miniatura = "video3.jpg" },
-            new Video { Titulo = "Video 4", Miniatura = "video40.jpg" },
-            // Agregar mas
         };
 
         BindingContext = this;
@@ -36,24 +33,8 @@ public partial class PaginaInicio : ContentPage
 
     private void btnLogaritmicas_Clicked(object sender, EventArgs e)
     {
-
-    }
-
-    //Barra
-    private void btnPerfil_Clicked(object sender, EventArgs e)
-    {
-        Navigation.PushModalAsync(new PaginaPerfil(), true);
-    }
-
-    private void btnPrueba_Clicked(object sender, EventArgs e)
-    {
-
-    }
-
-    public class Video
-    {
-        public string Titulo { get; set; }
-        public string Miniatura { get; set; }
+        var InLogaritmicas = new InLogaritmicas(_databaseService);
+        Navigation.PushAsync(InLogaritmicas, true);
     }
 
     private void btnPorPartes_Clicked(object sender, EventArgs e)
@@ -69,5 +50,18 @@ public partial class PaginaInicio : ContentPage
     private void btnFracciones_Clicked(object sender, EventArgs e)
     {
 
+    }
+
+    //Barra
+    private void btnPerfil_Clicked(object sender, EventArgs e)
+    {
+        var PaginaPerfil = new PaginaPerfil(_databaseService);
+        Navigation.PushModalAsync(PaginaPerfil, true);
+    }
+
+    public class Video
+    {
+        public string Titulo { get; set; }
+        public string Miniatura { get; set; }
     }
 }

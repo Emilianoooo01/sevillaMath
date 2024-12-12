@@ -29,8 +29,8 @@
 
             <DataTemplate x:Key="BotonVideo">
                 <Frame Padding="5" CornerRadius="30" Margin="7">
-                    <StackLayout Margin="10">
-                        <Image Source="{Binding Miniatura}" Aspect="AspectFill" HeightRequest="100"/>
+                    <StackLayout Margin="10" Spacing="10">
+                        <ImageButton Source="{Binding Miniatura}" Aspect="AspectFill" CornerRadius="20" HeightRequest="100" />
                         <Label Text="{Binding Titulo}" FontSize="Medium"/>
                     </StackLayout>
                 </Frame>
@@ -114,59 +114,11 @@
                                 x:Name="btnLogaritmicas"
                                 Clicked="btnLogaritmicas_Clicked"/>
 
-                        <Button Background="#D86A6A"
-                                BorderColor="#D86A6A"
-                                CornerRadius="40"
-                                HorizontalOptions="FillAndExpand"
-                                VerticalOptions="FillAndExpand"
-                                ImageSource="log_icon.png"
-                                x:Name="btnPorPartes"
-                                Clicked="btnPorPartes_Clicked"/>
-
-                        <Button Background="#D86A6A"
-                                BorderColor="#D86A6A"
-                                CornerRadius="40"
-                                HorizontalOptions="FillAndExpand"
-                                VerticalOptions="FillAndExpand"
-                                ImageSource="log_icon.png"
-                                x:Name="btnExplicitas"
-                                Clicked="btnExplicitas_Clicked"/>
-
-                        <Button Background="#D86A6A"
-                                BorderColor="#D86A6A"
-                                CornerRadius="40"
-                                HorizontalOptions="FillAndExpand"
-                                VerticalOptions="FillAndExpand"
-                                ImageSource="log_icon.png"
-                                x:Name="btnFracciones"
-                                Clicked="btnFracciones_Clicked"/>
-
-
-
                         <!--#region 
                         siaudgwoa-->
 
                     </StackLayout>
                 </ScrollView>
-
-                <!--Lista Videos-->
-                <Label Text="Videos"
-                       Margin="20"
-                       FontSize="30"
-                       FontFamily="Lora"/>
-
-                <CollectionView ItemsSource="{Binding Videos}" ItemTemplate="{StaticResource BotonVideo}" Margin="10">
-                    <CollectionView.ItemsLayout>
-                        <GridItemsLayout Orientation="Vertical" Span="2"/>
-                    </CollectionView.ItemsLayout>
-                </CollectionView>
-
-                <BoxView Grid.Row="0"
-                         BackgroundColor="#F1EFEF"
-                         HeightRequest="110"
-                         HorizontalOptions="Fill"
-                         VerticalOptions="Start"/>
-                
             </VerticalStackLayout>
         </ScrollView>
 
@@ -194,8 +146,7 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Button Grid.Column="0"
-                        Text="Perfil"
+                <Button Grid.Column="1"
                         TextColor="Black"
                         FontSize="20"
                         FontAttributes="Bold"
@@ -206,17 +157,14 @@
                         x:Name="btnPerfil"
                         Clicked="btnPerfil_Clicked"/>
 
-                <Button Grid.Column="1"
-                        Text="Prueba"
-                        TextColor="Black"
-                        FontSize="20"
-                        FontAttributes="Bold"
-                        FontFamily="RobotoSlab"
-                        CornerRadius="100"
-                        ImageSource="edit_icon.png"
-                        BackgroundColor="#f1f1f1"
-                        x:Name="btnPrueba"
-                        Clicked="btnPrueba_Clicked"/>
+                <Label Grid.Column="0"
+                       Text="  Perfil"
+                       TextColor="#f1f1f1"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       FontFamily="RobotoSlab"
+                       VerticalTextAlignment="Center"
+                       x:Name="btnPrueba"/>
 
             </Grid>
         </Frame>
