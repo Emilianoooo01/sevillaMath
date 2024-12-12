@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
+             x:Class="sevillaMath.InFraccionesParciales"
+             Title="InFraccionesParciales">
+
+    <Page.Behaviors>
+        <mct:StatusBarBehavior StatusBarColor="#c2cf53" StatusBarStyle="DarkContent"/>
+    </Page.Behaviors>
+
+    <ScrollView VerticalScrollBarVisibility="Never">
+        <VerticalStackLayout Background="#F1EFEF">
+
+            <!--Titulo-->
+            <Border BackgroundColor="#c2cf53"
+                    Stroke="#c2cf53"
+                    StrokeThickness="0"
+                    StrokeShape="RoundRectangle 0 0 30 30"
+                    HeightRequest="150"
+                    HorizontalOptions="FillAndExpand"
+                    VerticalOptions="Start"
+                    Background="#c2cf53">
+
+                <Label Text="Integrales&#x0a;Por Fracciones Parciales"
+                       Margin="20"
+                       FontSize="40"
+                       FontFamily="Lora"
+                       FontAttributes="Bold"
+                       VerticalOptions="Center"/>
+
+            </Border>
+
+            <!--Contenido Integrales por Fracciones Parciales-->
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

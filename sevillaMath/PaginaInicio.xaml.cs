@@ -30,7 +30,8 @@ public partial class PaginaInicio : ContentPage
     //Cursos
     private void btnInmediatas_Clicked(object sender, EventArgs e)
     {
-		Navigation.PushAsync(new InInmediatas(),true);
+        var InInmediatas = new InInmediatas(_databaseService);
+        Navigation.PushAsync(InInmediatas,true);
     }
 
     private void btnLogaritmicas_Clicked(object sender, EventArgs e)
