@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             NavigationPage.HasNavigationBar="False"
+             x:Class="sevillaMath.PaginaVideo"
+             Title="PaginaVideo">
+
+    <VerticalStackLayout BackgroundColor="#F1EFEF">
+        <Label Text="{Binding Titulo}" FontSize="30" Margin="20" FontFamily="Lora" HorizontalOptions="FillAndExpand"/>
+        
+        <WebView Source="{Binding VideoUrl}"
+
+                 HeightRequest="250"
+                 HorizontalOptions="FillAndExpand"/>
+    </VerticalStackLayout>
+</ContentPage>

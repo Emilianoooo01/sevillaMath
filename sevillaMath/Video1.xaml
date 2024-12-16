@@ -21,10 +21,6 @@
                    WidthRequest="400"
                    HorizontalOptions="Center">
 
-
-                <WebView Source="https://www.youtube.com/embed/moTqHR5eDdA?si=1Fz0c0TfccYxVRjN" 
-                         VerticalOptions="FillAndExpand" 
-                         HorizontalOptions="FillAndExpand" />
             </Frame>
 
 

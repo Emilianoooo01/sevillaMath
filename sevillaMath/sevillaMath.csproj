@@ -101,6 +101,9 @@
 	  <MauiXaml Update="PaginaRegistro.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="PaginaVideo.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Video1.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
