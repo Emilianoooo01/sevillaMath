@@ -1,5 +1,6 @@
 using CommunityToolkit.Maui.Core.Extensions;
 using System.Collections.ObjectModel;
+using System.Security.Cryptography.X509Certificates;
 
 namespace sevillaMath;
 
@@ -17,8 +18,8 @@ public partial class PaginaInicio : ContentPage
 
         Videos = new ObservableCollection<Video>
         {
-            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg"  = "https://example.com/video1.mp4"},
-            new Video { Titulo = "Video 2", Miniatura = "video2.jpg" },
+            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg", VideoUrl = "https://example.com/video1.mp4"},
+            new Video { Titulo = "Video 2", Miniatura = "video2.jpg", VideoUrl = "https://example.com/video2.mp4" },
         };
 
         BindingContext = this;
