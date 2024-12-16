@@ -29,8 +29,11 @@
 
             <DataTemplate x:Key="BotonVideo">
                 <Frame Padding="5" CornerRadius="30" Margin="7">
-                    <StackLayout Margin="10" Spacing="10">
-                        <ImageButton Source="{Binding Miniatura}" Aspect="AspectFill" CornerRadius="20" HeightRequest="100" />
+                    <StackLayout Margin="10">
+                        <ImageButton Source="{Binding Miniatura}"
+                                 Aspect="AspectFill"
+                                 HeightRequest="100"
+                                 Command="{Binding AbrirVideoCommand}"/>
                         <Label Text="{Binding Titulo}" FontSize="Medium"/>
                     </StackLayout>
                 </Frame>
@@ -114,11 +117,30 @@
                                 x:Name="btnLogaritmicas"
                                 Clicked="btnLogaritmicas_Clicked"/>
 
-                        <!--#region 
-                        siaudgwoa-->
-
                     </StackLayout>
                 </ScrollView>
+
+                <!--Lista Videos-->
+                <VerticalStackLayout>
+                    <Label Text="Videos"
+                           Margin="20"
+                           FontSize="30"
+                           FontFamily="Lora"/>
+
+                    <CollectionView ItemsSource="{Binding Videos}" ItemTemplate="{StaticResource BotonVideo}" Margin="10">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" Span="2"/>
+                        </CollectionView.ItemsLayout>
+                    </CollectionView>
+
+                    <BoxView Grid.Row="0"
+                             BackgroundColor="#F1EFEF"
+                             HeightRequest="110"
+                             HorizontalOptions="Fill"
+                             VerticalOptions="Start"/>
+                    
+                </VerticalStackLayout>
+
             </VerticalStackLayout>
         </ScrollView>
 

@@ -7,6 +7,7 @@ public partial class PaginaInicio : ContentPage
 {
     private readonly BDService _databaseService;
     public ObservableCollection<Video> Videos { get; set; }
+    public string VideoUrl { get; set; }
 
     public PaginaInicio(BDService databaseService)
 	{
@@ -16,7 +17,7 @@ public partial class PaginaInicio : ContentPage
 
         Videos = new ObservableCollection<Video>
         {
-            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg" },
+            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg"  = "https://example.com/video1.mp4"},
             new Video { Titulo = "Video 2", Miniatura = "video2.jpg" },
         };
 
@@ -63,5 +64,16 @@ public partial class PaginaInicio : ContentPage
     {
         public string Titulo { get; set; }
         public string Miniatura { get; set; }
+        public string VideoUrl { get; set; }
+        public Command AbrirVideoCommand { get; set; }
+
+        public Video()
+        {
+            AbrirVideoCommand = new Command(() =>
+            {
+                Launcher.Default.OpenAsync(VideoUrl);
+            });
+        }
     }
+
 }

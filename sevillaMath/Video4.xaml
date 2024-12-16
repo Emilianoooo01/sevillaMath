@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="sevillaMath.Video4"
+             Title="Video4">
+
+    <ScrollView>
+        <VerticalStackLayout Spacing="20" Padding="20">
+
+            <Label Text="Video Educativo de Integración por Fracciones Parciales"
+                   FontSize="24"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   VerticalTextAlignment="Center"/>
+
+
+            <Frame BackgroundColor="blue"
+                   CornerRadius="10"
+                   Padding="1"
+                   HeightRequest="300"
+                   WidthRequest="400"
+                   HorizontalOptions="Center">
+
+
+                <WebView x:Name="MyWebView"
+                    Source="https://www.youtube.com/embed/6pFmUh41jsQ?si=jJ92kWauolfZWDFS" 
+                         VerticalOptions="FillAndExpand" 
+                         HorizontalOptions="FillAndExpand" />
+            </Frame>
+
+
+            <Label Text="La integración por fracciones parciales es una técnica utilizada para resolver integrales de funciones racionales, es decir, funciones que son el cociente de dos polinomios. Esta técnica es útil cuando la función a integrar puede ser descompuesta en una suma de fracciones más simples, lo cual facilita la integración."
+                   FontSize="16"
+                   TextColor="Black"
+                   HorizontalTextAlignment="Center" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
