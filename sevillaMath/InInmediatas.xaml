@@ -35,7 +35,7 @@
 
             <VerticalStackLayout Margin="15">
                 <!--Contenido Integrales Inmediatas-->
-                <Label Text="Una integral inmediata es una integral que se puede resolver directamente usando una fórmula básica o una regla estándar sin necesidad de hacer cambios complejos o manipulaciones en la expresión."
+                <Label Text="Podemos decir que la integral indefinida es un procedimiento contrario al de las derivadas, por ende, podemos tener de las fórmulas de diferenciación, las fórmulas que nos permitan obtener las formas de integración. "
                        FontSize="16"
                        TextColor="Black"
                        HorizontalOptions="Center"
@@ -43,21 +43,333 @@
                        LineBreakMode="WordWrap"
                        Padding="10,20,0,20"/>
 
-                <Label Text="Ejemplo general"
-                       FontSize="20"
-                       FontFamily="RobotoSlab"
+                <Image Source="formasintdev.png" />
+
+                <Label Text="Podemos concluir que las integrales inmediatas son formas que no requieren métodos de integración específicos, solo necesitan en algunos casos de reescribirse algebraicamente para adaptarse a las fórmulas de integración.
+A continuación verás ejemplos de integrales inmediatas, junto con las fórmulas de integración que se emplean"
+                       FontSize="16"
                        TextColor="Black"
                        HorizontalOptions="Center"
-                       VerticalOptions="CenterAndExpand"
+                       VerticalOptions="StartAndExpand"
                        LineBreakMode="WordWrap"
-                       Padding="8,8"/>
+                       Padding="10,20,0,20"/>
 
-                <Image Margin="10,0,0,0"
-                       Aspect="AspectFill"
-                       HeightRequest="150"
-                       Source="ejemploinme.png"
-                       HorizontalOptions="Start"
-                       VerticalOptions="Center"/>
+                <Label Text="Ejemplos de integrales inmediatas"
+                       FontSize="25"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Label Text="EJEMPLO 1"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="ejemplo11.png" />
+
+                <Label Text="Tenemos la integral de una constante con respecto a x, como vimos anteriormente, podemos sacar todo número que no incluya una x, esto puede ser una constante, un logaritmo, entre otras que veremos más adelante."
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Label Text="Procedemos a sacar el 5 de la integral:"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo12.png" />
+
+                <Label Text="La integral de “dx” es igual a x, por lo tanto"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo13.png" />
+
+                <Label Text="EJEMPLO 2"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="ejemplo21.png" />
+
+                <Label Text="Podemos interpretar lo siguiente"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo22.png" />
+
+                <Label Text="Por lo tanto podemos excluir de la integral la constante y el signo negativo, quedándonos una integral menos difícil de ver."
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="ejemplo23.png" />
+
+                <Label Text="Usando la ley de los exponentes, podemos decir que:"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="ejemplo24.png" />
+
+                <Label Text="Ahora sí, podemos integrar con las reglas que ya explicamos."
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="ejemplo25.png" Margin="15"/>
+                <Image Source="ejemplo26.png" Margin="15" />
+
+                <Label Text="Simplificamos la expresión y realizamos las operaciones"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo27.png" Margin="15"/>
+                <Image Source="ejemplo28.png" Margin="15"/>
+
+                <Label Text="Las leyes de los exponentes son de gran importancia al momento de realizar integrales inmediatas, ya que se emplea el mismo procedimiento con raíces y exponentes negativos, sólo con la siguiente excepción: n no puede ser igual a -1"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Label Text="EJEMPLO 3"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo31.png" Margin="15"/>
+
+                <Label Text="Procederemos a reescribir las integrales y a aplicar leyes de los exponentes"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo32.png" Margin="15"/>
+                <Image Source="ejemplo33.png" Margin="15"/>
+                <Image Source="ejemplo34.png" Margin="15"/>
+
+                <Label Text="Con los exponentes reescritos, ahora sí podemos integrar."
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ejemplo35.png" Margin="15"/>
+                <Image Source="ejemplo36.png" Margin="15"/>
+                <Image Source="ejemplo37.png" Margin="15"/>
+                <Image Source="ejemplo38.png" Margin="15"/>
+                <Image Source="ejemplo39.png" Margin="15"/>
+
+
+                <Label Text="CAMBIO DE VARIABLE"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Label Text="Hay algunas técnicas que nos ayudarán a realizar integrales que a simple vista podrían parecer muy complicadas, una de estas técnicas es el cambio de variable, el cual consiste en establecer una equivalencia con un número u argumento para simplificar la expresión, en este caso, de integrales, donde se deriva la variable para obtener una integral más sencilla de resolver. Para que lo puedas comprender de mejor manera, a continuación verás un ejemplo"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Label Text="EJEMPLO 1"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="cv1.png" />
+
+                <Label Text="En este caso, podríamos desarrollar el binomio a su sexta potencia y resolver las siete integrales que resultan del desarrollo, lo cual es complicado si tenemos como exponentes números muy grandes, es por ello que emplearemos la técnica de cambio de variable. Empezamos por identificaron el número o argumento del cual podríamos simplificar. "
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Label Text="Asignamos que u = x+9, lo cual, en la integral quedaría de la siguiente manera"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="cv2.png" />
+
+                <Label Text="
+Para deshacernos del dx que nos estorba, debemos de derivar u con respecto a “x” a x+9, lo cual queda de la siguiente forma
+
+u = x+9"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="cv3.png" />
+
+
+                <Label Text="Multiplicamos en ambos lados “dx”"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+                
+                <Image Source="cv4.png" />
+
+
+                <Label Text="Nos queda que du = dx, por lo tanto, podemos sustituirla en nuestra integral para poder llegar al resultado, integrando como normalmente lo hacemos
+"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="cv5.png" Margin="15"/>
+                <Image Source="cv6.png" Margin="15"/>
+
+                <Label Text="Ahora, no olvides volver a sustituir tu variable a su valor original. u = x+9"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="cv7.png" />
+
+                <Label Text="Este es el resultado de la integral, planteada. Si aún no has comprendido completamente, presta atención al siguiente ejemplo"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Label Text="EJEMPLO 2"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+<Image Source="cva1.png" />
+
+                <Label Text="Cambio de variable:"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+<Image Source="cva2.png" />
+
+                <Label Text="
+Sustitución en la integral
+"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+<Image Source="cva3.png" />
+
+                <Label Text="Resolución de la integral:"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+<Image Source="cva4.png" />
+
+                <Label Text="Regresando a la variable original:"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+<Image Source="cva5.png" />
+
+                <Label Text="Resultado final:"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+<Image Source="cva6.png" />
+<Image Source="cva7.png" />
+
+                <Label Text=""
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
 
                 <Label Text="Práctica"
                        FontSize="20"
