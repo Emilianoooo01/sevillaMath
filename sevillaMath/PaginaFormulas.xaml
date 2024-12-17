@@ -173,19 +173,72 @@
                FontAttributes="Bold"
                HorizontalOptions="FillAndExpand"
                VerticalOptions="End"/>
-                
+
+                <Label Grid.Row="0"
+               Text="Derivadas Elementales"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
                 <Image Source="d1.png" />
                 <Image Source="d2.png" />
                 <Image Source="d3.png" />
                 <Image Source="d4.png" />
+
+                <Label Grid.Row="0"
+               Text="Derivadas de Dos Funciones"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
                 <Image Source="d5.png" />
                 <Image Source="d6.png" />
                 <Image Source="d7.png" />
+
+                <Label Grid.Row="0"
+               Text="Regla de la Cadena"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
                 <Image Source="d8.png" />
+
+                <Label Grid.Row="0"
+               Text="Derivadas Exponenciales"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                
                 <Image Source="d9.png" />
                 <Image Source="d10.png" />
                 <Image Source="d11.png" />
                 <Image Source="d12.png" />
+
+                <Label Grid.Row="0"
+               Text="Derivadas Trigonométricas"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
                 <Image Source="d13.png" />
                 <Image Source="d14.png" />
                 <Image Source="d15.png" />
@@ -193,7 +246,116 @@
                 <Image Source="d17.png" />
                 <Image Source="d18.png" />
 
+                <Label Grid.Row="0"
+               Text="Cálculo: Marco Histórico"
+               Margin="20"
+               FontSize="25"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
 
+                <Label Grid.Row="0"
+               Text="Es una rama de las matemáticas centrada en los límites, la continuidad, las derivadas, las integrales y las series infinitas. La palabra Cálculo viene del latín Calculus que significa “piedrita”, lo que se remonta a épocas pretéritas en las que se usaban ábacos para contabilizar cosas."
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+                <Label Grid.Row="0"
+               Text="Los primeros en desarrollar una teoría del cálculo fueron Isaac Newton y Gottfried Wilhelm Leibniz, cada uno de forma independiente a finales del siglo XVII. Tanto Leibniz como Newton afirmaron que el otro había robado su trabajo y la controversia sobre el padre del cálculo (entre Leibniz y Newton) continuó hasta la muerte de Leibniz en 1716."
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+
+                <HorizontalStackLayout Grid.Row="2" Margin="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="newton.jpg" WidthRequest="150" HeightRequest="150" />
+                        <Label Text="Isaac Newton" 
+               HorizontalTextAlignment="Center" 
+               FontSize="14" 
+               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="leibniz.jpg" WidthRequest="150" HeightRequest="150" />
+                        <Label Text="Gottfried Wilhelm Leibniz" 
+               HorizontalTextAlignment="Center" 
+               FontSize="14" 
+               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </HorizontalStackLayout>
+
+                <Label Grid.Row="0"
+               Text="Todas las grandes civilizaciones del mundo antiguo desarrollaron aproximaciones al cálculo, especialmente al cálculo de volúmenes y áreas, aunque no desarrollaron el concepto de derivadas, necesario para el cálculo moderno. Entre éstas se encuentran los egipcios, babilonios, griegos y chinos."
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+                <Label Grid.Row="0"
+               Text="El cálculo suele dividirse en dos partes, denominadas cálculo diferencial y cálculo integral; el cálculo diferencial investiga las propiedades de las razones de cambio comparativas de variables que están vinculadas por medio de ecuaciones, es decir, se centra en el estudio de las tasas de cambio y cómo las funciones varían de manera instantánea en puntos específicos por medio de herramientas como límites o la propia derivada. "
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+                <Label Grid.Row="0"
+               Text="Su enfoque principal es el concepto de derivada, que proporciona una medida precisa de la velocidad con la que una cantidad cambia en relación con otra.  El paso al límite es la principal herramienta que permite desarrollar la teoría del cálculo diferencial y la que lo diferencia claramente del álgebra."
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+                <Label Grid.Row="0"
+               Text="Algunas funciones que tiene la derivada son:
+Velocidad y aceleración (cinemática): En física la derivada se usa para describir cómo cambian las cantidades de tiempo como la posición la aceleración o el tiempo 
+Optimización  : La derivada es una herramienta clave en problemas de optimización, es decir, en la búsqueda de máximos y mínimos de funciones
+Curvas y geometría Analitica 
+Las derivadas se utilizan para describir la pendiente de una curva en un punto dado. Esta es una herramienta clave en geometría analítica y en el estudio de la forma de las curvas"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+                <VerticalStackLayout Margin="20" Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="deriv.jpg" WidthRequest="150" HeightRequest="150" />
+                        <Label Text="Representación Gráfica de la Derivada" 
+               HorizontalTextAlignment="Center" 
+               FontSize="14" 
+               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                    
+                    <VerticalStackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                        <Image Source="integral.jpg" WidthRequest="150" HeightRequest="150" />
+                        <Label Text="Representación Gráfica de la Integral" 
+               HorizontalTextAlignment="Center" 
+               FontSize="14" 
+               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </VerticalStackLayout>
 
 
 
