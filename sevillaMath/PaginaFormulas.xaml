@@ -49,12 +49,160 @@
         <!--Formulario-->
 
         <ScrollView Grid.Row="1"
+                    Grid.RowSpan="2"
                     HorizontalScrollBarVisibility="Never"
                     VerticalScrollBarVisibility="Never"
                     HorizontalOptions="FillAndExpand"
                     VerticalOptions="FillAndExpand">
             
             <!--Agregar Contenido-->
+
+            <VerticalStackLayout>
+               <Label Grid.Row="0"
+               Text="Integrales"
+               Margin="20"
+               FontSize="25"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                <Label Grid.Row="0"
+               Text="Integrales Elementales"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                <Image Source="ii1.png" />
+                <Image Source="ii2.png" />
+                <Image Source="ii3.png" />
+                <Image Source="ii4.png" />
+                <Label Grid.Row="0"
+               Text="Integrales Exponenciales"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                <Image Source="ii5.png" />
+                <Image Source="ii6.png" />
+                <Image Source="ii7.png" />
+                <Label Grid.Row="0"
+               Text="Integrales Trigonométricas"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                <Image Source="ii8.png" />
+                <Image Source="ii9.png" />
+                <Image Source="ii10.png" />
+                <Image Source="ii11.png" />
+                <Image Source="ii12.png" />
+                <Image Source="ii13.png" />
+                <Label Grid.Row="0"
+               Text="Integrales Trigonométricas Indirectas"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                <Image Source="ii14.png" />
+                <Image Source="ii15.png" />
+                <Image Source="ii16.png" />
+                <Image Source="ii17.png" />
+
+                <Label Grid.Row="0"
+               Text="Integración por partes"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                <Image Source="ipp.png" />
+                
+                <Label Grid.Row="0"
+               Text="Sustitución Trigonométrica"
+               Margin="10"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+
+                <Image Source="susttri.jpg" />
+
+                <Label Grid.Row="0"
+               Text="Identidades Trigonométricas"
+               Margin="20"
+               FontSize="15"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                
+                <Image Source="it1.png" />
+                <Image Source="it2.png" />
+                <Image Source="it3.png" />
+                <Image Source="it4.png" />
+                <Image Source="it5.png" />
+                <Image Source="it6.png" />
+                <Image Source="it7.png" />
+                <Image Source="it8.png" />
+                <Image Source="it9.png" />
+
+                <Label Grid.Row="0"
+               Text="Derivadas"
+               Margin="20"
+               FontSize="25"
+               FontFamily="Lora"
+               TextColor="Black"
+               FontAttributes="Bold"
+               HorizontalOptions="FillAndExpand"
+               VerticalOptions="End"/>
+                
+                <Image Source="d1.png" />
+                <Image Source="d2.png" />
+                <Image Source="d3.png" />
+                <Image Source="d4.png" />
+                <Image Source="d5.png" />
+                <Image Source="d6.png" />
+                <Image Source="d7.png" />
+                <Image Source="d8.png" />
+                <Image Source="d9.png" />
+                <Image Source="d10.png" />
+                <Image Source="d11.png" />
+                <Image Source="d12.png" />
+                <Image Source="d13.png" />
+                <Image Source="d14.png" />
+                <Image Source="d15.png" />
+                <Image Source="d16.png" />
+                <Image Source="d17.png" />
+                <Image Source="d18.png" />
+
+
+
+
+
+
+
+
+
+
+            </VerticalStackLayout>
         </ScrollView>
     </Grid>
 
