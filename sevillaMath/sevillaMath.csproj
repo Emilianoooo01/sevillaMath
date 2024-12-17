@@ -114,6 +114,7 @@
 	  <None Remove="Resources\Images\newton.jpg" />
 	  <None Remove="Resources\Images\play_icon.png" />
 	  <None Remove="Resources\Images\susttri.jpg" />
+	  <None Remove="Resources\Images\trig_icon.png" />
 	  <None Remove="Resources\Images\video1.png" />
 	  <None Remove="Resources\Images\video2.png" />
 	  <None Remove="Resources\Images\video3.png" />
@@ -146,6 +147,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="InPorPartes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="InTrigonometricas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PaginaFormulas.xaml">

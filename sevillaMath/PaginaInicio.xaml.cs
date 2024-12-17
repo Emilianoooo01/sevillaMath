@@ -47,6 +47,12 @@ public partial class PaginaInicio : ContentPage
         Navigation.PushAsync(InLogaritmicas, true);
     }
 
+    private void btnTrigonometricas_Clicked(object sender, EventArgs e)
+    {
+        var InTrigonometricas = new InTrigonometricas(_databaseService);
+        Navigation.PushAsync(InTrigonometricas, true);
+    }
+
     private void btnPorPartes_Clicked(object sender, EventArgs e)
     {
 
