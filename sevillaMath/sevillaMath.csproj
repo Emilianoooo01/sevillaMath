@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\icon_sevilla.svg" Color="#F1EFEF" BaseSize="50,50" Resize="True"/>
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\icon_sevilla.svg" Color="#F1EFEF" BaseSize="50,50" Resize="True" />
 		
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\logo_sevilla.svg" Color="#AB8566" BaseSize="500,500" Aspect="Fit" />
@@ -64,6 +64,12 @@
 	  <None Remove="Resources\Images\logo.png" />
 	  <None Remove="Resources\Images\log_icon.png" />
 	  <None Remove="Resources\Images\play_icon.png" />
+	  <None Remove="Resources\Images\video1.png" />
+	  <None Remove="Resources\Images\video2.png" />
+	  <None Remove="Resources\Images\video3.png" />
+	  <None Remove="Resources\Images\video4.png" />
+	  <None Remove="Resources\Images\video5.png" />
+	  <None Remove="Resources\Images\video6.png" />
 	  <None Remove="Resources\Splash\logo_sevilla.svg" />
 	</ItemGroup>
 
@@ -90,6 +96,9 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="InPorPartes.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
+	  <MauiXaml Update="PaginaFormulas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="PaginaInicio.xaml">

@@ -39,7 +39,7 @@
                     <Label Text="{Binding Titulo}"
                            FontFamily="RobotoSlab"
                            Padding="5"
-                           MaxLines="2"
+                           MaxLines="3"
                            FontSize="20"/>
                     
                 </StackLayout>
@@ -144,7 +144,7 @@
                              HeightRequest="110"
                              HorizontalOptions="Fill"
                              VerticalOptions="Start"/>
-                    
+
                 </VerticalStackLayout>
 
             </VerticalStackLayout>
@@ -174,7 +174,8 @@
                     <RowDefinition/>
                 </Grid.RowDefinitions>
 
-                <Button Grid.Column="1"
+                <Button Grid.Column="0"
+                        Text="Perfil"
                         TextColor="Black"
                         FontSize="20"
                         FontAttributes="Bold"
@@ -185,18 +186,21 @@
                         x:Name="btnPerfil"
                         Clicked="btnPerfil_Clicked"/>
 
-                <Label Grid.Column="0"
-                       Text="  Perfil"
-                       TextColor="#f1f1f1"
-                       FontSize="30"
-                       FontAttributes="Bold"
-                       FontFamily="RobotoSlab"
-                       VerticalTextAlignment="Center"
-                       x:Name="btnPrueba"/>
+                <Button Grid.Column="1"
+                        Text="Formula"
+                        TextColor="Black"
+                        FontSize="20"
+                        FontAttributes="Bold"
+                        FontFamily="RobotoSlab"
+                        CornerRadius="100"
+                        ImageSource="edit_icon.png"
+                        BackgroundColor="#f1f1f1"
+                        x:Name="btnFormulas"
+                        Clicked="btnFormulas_Clicked"/>
 
             </Grid>
         </Frame>
-        
+
         <BoxView Grid.Row="2"
                  ZIndex="1"
                  Background="{StaticResource DegradadoInferior}"

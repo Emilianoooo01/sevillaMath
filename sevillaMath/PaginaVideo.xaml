@@ -11,7 +11,8 @@
 
         <VerticalStackLayout BackgroundColor="#F1EFEF">
             <Label Text="{Binding Titulo}"
-                   FontSize="30" Margin="20"
+                   FontSize="30"
+                   Margin="15"
                    FontAttributes="Bold"
                    FontFamily="Lora"
                    HorizontalOptions="FillAndExpand"/>
@@ -26,8 +27,8 @@
                    FontFamily="Lora"
                    HorizontalOptions="FillAndExpand"/>
 
-            <Label Text=""
-                   FontSize="20"
+            <Label Text="{Binding Descripcion}"
+                   FontSize="15"
                    Margin="20"
                    LineBreakMode="WordWrap"
                    HorizontalOptions="FillAndExpand"/>
