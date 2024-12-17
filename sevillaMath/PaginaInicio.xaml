@@ -28,15 +28,21 @@
             </LinearGradientBrush>
 
             <DataTemplate x:Key="BotonVideo">
-                <Frame Padding="5" CornerRadius="30" Margin="7">
-                    <StackLayout Margin="10">
+                <StackLayout>
+                    <Frame Padding="-1" CornerRadius="30" Margin="5" BackgroundColor="#F6E3D2" BorderColor="#00F1EFEF">
                         <ImageButton Source="{Binding Miniatura}"
-                                 Aspect="AspectFill"
-                                 HeightRequest="100"
-                                 Command="{Binding AbrirVideoCommand}"/>
-                        <Label Text="{Binding Titulo}" FontSize="Medium"/>
-                    </StackLayout>
-                </Frame>
+                                     HeightRequest="300"
+                                     Aspect="AspectFill"
+                                     Command="{Binding AbrirVideoCommand}"/>
+                    </Frame>
+
+                    <Label Text="{Binding Titulo}"
+                           FontFamily="RobotoSlab"
+                           Padding="5"
+                           MaxLines="2"
+                           FontSize="20"/>
+                    
+                </StackLayout>
             </DataTemplate>
 
         </ResourceDictionary>

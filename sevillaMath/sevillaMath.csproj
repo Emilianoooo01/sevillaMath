@@ -40,7 +40,7 @@
 
 	<ItemGroup>
 		<!-- App Icon -->
-		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\icon_sevilla.svg" Color="#512BD4" />
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\icon_sevilla.svg" Color="#F1EFEF" BaseSize="50,50" Resize="True"/>
 		
 		<!-- Splash Screen -->
 		<MauiSplashScreen Include="Resources\Splash\logo_sevilla.svg" Color="#AB8566" BaseSize="500,500" Aspect="Fit" />
@@ -104,27 +104,11 @@
 	  <MauiXaml Update="PaginaVideo.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Video1.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Video2.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Video3.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Video4.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
 	</ItemGroup>
 
 	<ItemGroup>
 	  <None Update="InInmediatas.xaml">
 	    <Generator>MSBuild:Compile</Generator>
-	  </None>
-	  <None Update="Resources\AppIcon\icon_sevilla.svg">
-	    <Aspect>Fill</Aspect>
-	    <Color>#AB8566</Color>
 	  </None>
 	</ItemGroup>
 
