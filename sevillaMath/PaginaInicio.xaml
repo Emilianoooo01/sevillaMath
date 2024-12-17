@@ -102,7 +102,7 @@
                             HorizontalScrollBarVisibility="Never">
 
                     <StackLayout Spacing="15"
-                                 Margin="20"
+                                 Margin="15"
                                  Orientation="Horizontal">
 
                         <Button Background="#6A93D8"
@@ -122,6 +122,15 @@
                                 ImageSource="log_icon.png"
                                 x:Name="btnLogaritmicas"
                                 Clicked="btnLogaritmicas_Clicked"/>
+
+                        <Button Background="#8D6AD8"
+                                BorderColor="#8D6AD8"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="trig_icon.png"
+                                x:Name="btnTrigonometricas"
+                                Clicked="btnTrigonometricas_Clicked"/>
 
                     </StackLayout>
                 </ScrollView>
