@@ -11,6 +11,7 @@ namespace sevillaMath
         public string Titulo { get; set; }
         public string Miniatura { get; set; }
         public string VideoUrl { get; set; }
+        public string Descripcion { get; set; }
         public Command AbrirVideoCommand { get; set; }
 
         public Video()

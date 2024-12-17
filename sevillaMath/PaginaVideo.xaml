@@ -6,12 +6,32 @@
              x:Class="sevillaMath.PaginaVideo"
              Title="PaginaVideo">
 
-    <VerticalStackLayout BackgroundColor="#F1EFEF">
-        <Label Text="{Binding Titulo}" FontSize="30" Margin="20" FontFamily="Lora" HorizontalOptions="FillAndExpand"/>
-        
-        <WebView Source="{Binding VideoUrl}"
+    <ScrollView VerticalScrollBarVisibility="Never"
+                HorizontalScrollBarVisibility="Never">
 
-                 HeightRequest="250"
-                 HorizontalOptions="FillAndExpand"/>
-    </VerticalStackLayout>
+        <VerticalStackLayout BackgroundColor="#F1EFEF">
+            <Label Text="{Binding Titulo}"
+                   FontSize="30" Margin="20"
+                   FontAttributes="Bold"
+                   FontFamily="Lora"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <WebView Source="{Binding VideoUrl}"
+                     HeightRequest="250"
+                     HorizontalOptions="FillAndExpand"/>
+
+            <Label Text="Descripción"
+                   FontSize="25"
+                   Margin="20"
+                   FontFamily="Lora"
+                   HorizontalOptions="FillAndExpand"/>
+
+            <Label Text=""
+                   FontSize="20"
+                   Margin="20"
+                   LineBreakMode="WordWrap"
+                   HorizontalOptions="FillAndExpand"/>
+            
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>

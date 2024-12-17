@@ -17,7 +17,7 @@ public partial class PaginaInicio : ContentPage
 
         Videos = new ObservableCollection<Video>
         {
-            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg", VideoUrl = "https://www.youtube.com/embed/msDiFIjvHks?si=21RZRFaNlP0qxUS4"},
+            new Video { Titulo = "Explicando Integrales", Miniatura = "video1.jpg", VideoUrl = "https://www.youtube.com/embed/msDiFIjvHks?si=21RZRFaNlP0qxUS4", Descripcion="Este video jsksjsk"},
             new Video { Titulo = "Video 2", Miniatura = "video2.jpg", VideoUrl = "https://example.com/video2.mp4" },
         };
 
