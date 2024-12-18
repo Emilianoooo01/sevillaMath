@@ -23,7 +23,7 @@ public partial class InLogaritmicas : ContentPage
     {
         string nombreUsuario = SesionUsuario.NombreUsuario;
         int temaId = 2;
-        const int limiteDiasTema = 3;
+        const int limiteDiasTema = 1;
 
 
         var intento = await _databaseService.ObtenerIntentoPorUsuarioYTemaAsync(nombreUsuario, temaId);
@@ -51,16 +51,7 @@ public partial class InLogaritmicas : ContentPage
             await DisplayAlert("Acceso Restringido", $"A�n no puedes responder el formulario. Faltan {limiteDiasTema - diasTranscurridos - 1} dias.", "OK");
             return;
         }
-        else if (diasTranscurridos == limiteDiasTema - 1)
-        {
-            await DisplayAlert("Acceso Permitido", "Hoy puedes responder el formulario.", "OK");
-        }
-        else
-        {
-            await DisplayAlert("Tiempo Agotado", "El tiempo para responder este tema ha expirado.", "OK");
-            return;
-        }
-
+       
         int correctAnswers = 0;
 
         if (OpA4.IsChecked)
