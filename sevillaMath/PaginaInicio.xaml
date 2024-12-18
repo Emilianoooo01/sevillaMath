@@ -132,15 +132,6 @@
                                 x:Name="btnLogaritmicas"
                                 Clicked="btnLogaritmicas_Clicked"/>
 
-                        <Button Background="#8D6AD8"
-                                BorderColor="#8D6AD8"
-                                CornerRadius="40"
-                                HorizontalOptions="FillAndExpand"
-                                VerticalOptions="FillAndExpand"
-                                ImageSource="trig_icon.png"
-                                x:Name="btnTrigonometricas"
-                                Clicked="btnTrigonometricas_Clicked"/>
-
                     </StackLayout>
                 </ScrollView>
 

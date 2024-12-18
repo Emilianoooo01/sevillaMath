@@ -33,123 +33,168 @@
 
             </Border>
 
-            <!--Contenido Integrales Logaritmicas-->
-            <VerticalStackLayout BackgroundColor="#F1EFEF" Spacing="10">
+            <VerticalStackLayout BackgroundColor="#F1EFEF" Spacing="15" Margin="15">
+                <!--Contenido Integrales Logaritmicas-->
+                <Label Text="Lo que respecta a las integrales logaritmicas, debemos recordar la derivada de un logaritmo neperiano"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
 
-                <Label Text="Una integral inmediata es una integral que se puede resolver directamente usando una fórmula básica o una regla estándar sin necesidad de hacer cambios complejos o manipulaciones en la expresión."
-                   FontSize="16"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="StartAndExpand"
-                   LineBreakMode="WordWrap"
-                   Padding="10,20,0,20"/>
+                <Image Source="il1.png" />
 
-                <Label Text="Ejemplo general:"
-                   FontSize="18"
-                   TextDecorations="Underline"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="StartAndExpand"
-                   LineBreakMode="WordWrap"
-                   Padding="8,8"/>
+                <Label Text="Bajo esta premisa, podemos concluir que la integral de x a la potencia de menos uno, deberá ser equivalente al logaritmo natural de x. Con el cambio de variable, las integrales logarítmicas pasan a ser relativamente comunes, dependiendo de la función a integrar. No podríamos aplicar las reglas de integración que ya conocemos debido a que la potencia del argumento quedaría a cero, lo cual es incorrecto, ya que al derivar la función integrada no llegaríamos a la función original; dicho procedimiento es una forma idónea de comprobar si nuestro procedimiento es correcto o si cometimos un error."
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
 
-                <Image Margin="10,0,0,0"
-                   Aspect="AspectFill"
-                   HeightRequest="150"
-                   Source="ejemploinme.png"
-                   HorizontalOptions="Start"
-                   VerticalOptions="Center"/>
+                <Label Text="Ejemplo 1"
+                       FontSize="25"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ile11.png" />
+
+                <Label Text="Al inspeccionar la integral, nos damos cuenta que al derivar la función en el denominador, obtenemos de resultado la función en el numerador, por lo que es compatible para realizar el cambio de variable. Quedando de la siguiente manera
+"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="cv8.png" />
+
+                <Image Source="ile12.png" />
+
+                <Label Text="Sustituimos “u” en nuestro resultado"
+                       FontSize="16"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ile13.png" />
+
+                <Label Text="Ejemplo 2"
+                       FontSize="25"
+                       TextColor="Black"
+                       HorizontalOptions="Center"
+                       VerticalOptions="StartAndExpand"
+                       LineBreakMode="WordWrap"
+                       Padding="10,20,0,20"/>
+
+                <Image Source="ile21.png" />
+                <Image Source="ile22.png" />
+                <Image Source="ile23.png" />
+                <Image Source="ile24.png" />
+                <Image Source="ile25.png" />
 
                 <Label Text="Resuelve los siguientes ejercicios:"
-                   FontSize="18"
-                   TextDecorations="Underline"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="StartAndExpand"
-                   LineBreakMode="WordWrap"
-                   Padding="10,20"/>
+   FontSize="18"
+   TextDecorations="Underline"
+   TextColor="Black"
+   HorizontalOptions="Center"
+   VerticalOptions="StartAndExpand"
+   LineBreakMode="WordWrap"
+   Padding="10,20"/>
 
-                <Label Text="1. Resuelve la integral: ∫1/x dx"
-                   FontSize="14"
-                   TextColor="Black"
-                   HorizontalOptions="Start"
-                   VerticalOptions="Center"
-                   Padding="10,10"/>
+                <Label Text="1. Resuelve la integral: ∫ln(x) dx"
+   FontSize="14"
+   TextColor="Black"
+   HorizontalOptions="Start"
+   VerticalOptions="Center"
+   Padding="10,10"/>
                 <Button
-                Text="Ver Resultado"
-                HorizontalOptions="Start"
-                x:Name="OnVerUnoButton"
-                Clicked="OnVerUnoButton_Clicked"
-                BackgroundColor="#d86a6a"
-                Margin="10,0,0,0"/>
+   Text="Ver Resultado"
+   HorizontalOptions="Start"
+   x:Name="OnVerUnoButton"
+   Clicked="OnVerUnoButton_Clicked"
+   BackgroundColor="#d86a6a"
+   Margin="10,0,0,0"/>
                 <Label x:Name="VerUno" 
-                   Text="La respuesta es: 1/x dx= In∣x∣+C "
-                   TextColor="Green"
-                   FontSize="14"
-                   IsVisible="False"
-                   HorizontalOptions="Start"
-                   Margin="10,0,0,0"/>
-                <Label Text="2. Resuelve la integral: 3/x dx"
-                   FontSize="14"
-                   TextColor="Black"
-                   HorizontalOptions="Start"
-                   VerticalOptions="Center"
-                   Padding="10,10"/>
+   Text="La respuesta es: x(ln(x)−1)+C"
+   TextColor="Green"
+   FontSize="14"
+   IsVisible="False"
+   HorizontalOptions="Start"
+   Margin="10,0,0,0"/>
+
+                <Label Text="2. Resuelve la integral: ∫ln(2x) dx"
+   FontSize="14"
+   TextColor="Black"
+   HorizontalOptions="Start"
+   VerticalOptions="Center"
+   Padding="10,10"/>
                 <Button
-                   Text="Ver Resultado"
-                   HorizontalOptions="Start"
-                    x:Name="OnVerDosButton"
-                   Clicked="OnVerDosButton_Clicked"
-                   BackgroundColor="#d86a6a"
-                   Margin="10,0,0,0"/>
+   Text="Ver Resultado"
+   HorizontalOptions="Start"
+   x:Name="OnVerDosButton"
+   Clicked="OnVerDosButton_Clicked"
+   BackgroundColor="#d86a6a"
+   Margin="10,0,0,0"/>
                 <Label x:Name="VerDos"
-                   Text="La respuesta es: ∫3/x dx=3 In∣x∣+C "
-                   TextColor="Green"
-                   FontSize="14"
-                   IsVisible="False"
-                   HorizontalOptions="Start"
-                   Margin="10,0,0,0"/>
+   Text="La respuesta es: x(ln(2x)−1)+C"
+   TextColor="Green"
+   FontSize="14"
+   IsVisible="False"
+   HorizontalOptions="Start"
+   Margin="10,0,0,0"/>
+
                 <Label Text="Formulario para poder avanzar:"
-                   FontSize="18"
-                   TextDecorations="Underline"
-                   TextColor="Black"
-                   HorizontalOptions="Center"
-                   VerticalOptions="StartAndExpand"
-                   LineBreakMode="WordWrap"
-                   Padding="10,20"/>
-                <Label Text="1.  ∫4/x dx "
-                   FontSize="16"
-                   TextColor="Black"
-                   VerticalOptions="StartAndExpand"
-                   HorizontalOptions="Center"
-                   LineBreakMode="WordWrap"/>
-                <RadioButton x:Name="OpA1" Content="4 In (x)+C" FontSize="14" Margin="30,0,0,0" GroupName="OpA"/>
-                <RadioButton x:Name="OpA2" Content="In (4x)+C" FontSize="14"  Margin="30,0,0,0" GroupName="OpA"/>
-                <RadioButton x:Name="OpA3" Content="In(x4)+C" FontSize="14" Margin="30,0,0,0" GroupName="OpA"/>
-                <RadioButton x:Name="OpA4" Content="4 In ∣x∣+C" FontSize="14"  Margin="30,0,0,0" GroupName="OpA"/>
-                <Label Text="1.  ∫6x/x2+1 dx "
-                   FontSize="16"
-                   TextColor="Black"
-                   VerticalOptions="StartAndExpand"
-                   HorizontalOptions="Center"
-                   LineBreakMode="WordWrap"/>
-                <RadioButton x:Name="OpB1" Content="3 In(x2+1)+C" FontSize="14" Margin="30,0,0,0" GroupName="OpB"/>
-                <RadioButton x:Name="OpB2" Content="In(x2+1)+C" FontSize="14"  Margin="30,0,0,0" GroupName="OpB"/>
-                <RadioButton x:Name="OpB3" Content="3 In (x)+C" FontSize="14" Margin="30,0,0,0" GroupName="OpB"/>
-                <RadioButton x:Name="OpB4" Content="3 arctan(x)+C" FontSize="14"  Margin="30,0,0,0" GroupName="OpB"/>
+   FontSize="18"
+   TextDecorations="Underline"
+   TextColor="Black"
+   HorizontalOptions="Center"
+   VerticalOptions="StartAndExpand"
+   LineBreakMode="WordWrap"
+   Padding="10,20"/>
+
+                <Label Text="1.  ∫ln(3x) dx "
+   FontSize="16"
+   TextColor="Black"
+   VerticalOptions="StartAndExpand"
+   HorizontalOptions="Center"
+   LineBreakMode="WordWrap"/>
+                <RadioButton x:Name="OpA1" Content="x(ln(3x) - 1) + C" FontSize="14" Margin="30,0,0,0" GroupName="OpA"/>
+                <RadioButton x:Name="OpA2" Content="ln(3x) + C" FontSize="14"  Margin="30,0,0,0" GroupName="OpA"/>
+                <RadioButton x:Name="OpA3" Content="3 ln(x) + C" FontSize="14" Margin="30,0,0,0" GroupName="OpA"/>
+                <RadioButton x:Name="OpA4" Content="x ln(3x) + C" FontSize="14"  Margin="30,0,0,0" GroupName="OpA"/>
+
+                <Label Text="2.  ∫ln(x^2) dx "
+   FontSize="16"
+   TextColor="Black"
+   VerticalOptions="StartAndExpand"
+   HorizontalOptions="Center"
+   LineBreakMode="WordWrap"/>
+                <RadioButton x:Name="OpB1" Content="2x(ln(x) - 1) + C" FontSize="14" Margin="30,0,0,0" GroupName="OpB"/>
+                <RadioButton x:Name="OpB2" Content="x(ln(x^2) - 1) + C" FontSize="14"  Margin="30,0,0,0" GroupName="OpB"/>
+                <RadioButton x:Name="OpB3" Content="ln(x^2) + C" FontSize="14" Margin="30,0,0,0" GroupName="OpB"/>
+                <RadioButton x:Name="OpB4" Content="2 ln(x) + C" FontSize="14"  Margin="30,0,0,0" GroupName="OpB"/>
+
                 <Button 
-                Text="Verificar respuestas"
-                HorizontalOptions="Start"
-                x:Name="OnVerificarInmediatasButton"
-                Clicked="OnVerificarInmediatasButton_Clicked"
-                BackgroundColor="#d86a6a"
-                Margin="30,0,0,0"/>
-                <Label x:Name="VerInm"
-                   Text=" "
-                   TextColor="Green"
-                   FontSize="16"
-                   HorizontalOptions="Start"
-                   Margin="30,0,0,0"/>
+   Text="Verificar respuestas"
+   HorizontalOptions="Start"
+   x:Name="OnVerificarLogButton"
+   Clicked="OnVerificarLogButton_Clicked"
+   BackgroundColor="#d86a6a"
+   Margin="30,0,0,0"/>
+                <Label x:Name="VerLog"
+   Text=" "
+   TextColor="Green"
+   FontSize="16"
+   HorizontalOptions="Start"
+   Margin="30,0,0,0"/>
 
             </VerticalStackLayout>
         </VerticalStackLayout>
