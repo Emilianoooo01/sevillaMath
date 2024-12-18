@@ -105,6 +105,15 @@
                                  Margin="15"
                                  Orientation="Horizontal">
 
+                        <Button Background="#d89f6a"
+                                BorderColor="#d89f6a"
+                                CornerRadius="40"
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="FillAndExpand"
+                                ImageSource="hist_icon.png"
+                                x:Name="btnHistoria"
+                                Clicked="btnHistoria_Clicked"/>
+
                         <Button Background="#6A93D8"
                                 BorderColor="#6A93D8"
                                 CornerRadius="40"

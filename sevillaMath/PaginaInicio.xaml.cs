@@ -35,6 +35,11 @@ public partial class PaginaInicio : ContentPage
     }
 
     //Cursos
+    private void btnHistoria_Clicked(object sender, EventArgs e)
+    {
+        Navigation.PushAsync(new InHistoria(), true);
+    }
+
     private void btnInmediatas_Clicked(object sender, EventArgs e)
     {
         var InInmediatas = new InInmediatas(_databaseService);
